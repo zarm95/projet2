@@ -1,0 +1,8 @@
+fetch('example.json')
+  .then(response => response.json())
+  .then(data => {
+     
+    data.newProperty = 'This is a new property';
+ 
+    const updatedData = JSON.stringify(data);})
+  .catch(error => console.error(error));
